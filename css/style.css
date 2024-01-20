@@ -193,10 +193,11 @@ img {
 
 .hero {
   background-color: #3B4050;
-  padding: 2em 0;
+  padding: 3em 0;
   min-height: 400px;
 }
 .hero__title {
+  margin-bottom: 1em;
   font-size: 4rem;
   color: #FFFFFF;
   text-align: center;
@@ -210,7 +211,7 @@ img {
   color: #FFFFFF;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 .hero--button {
   display: inline-block;
@@ -235,6 +236,109 @@ img {
 }
 
 .col {
-  margin: 2em 0;
   text-align: center;
+}
+
+.first-section {
+  background-color: rgb(242, 240, 240);
+  padding: 2em 0;
+}
+.first-section__title {
+  color: #A59678;
+  font-size: 2.4rem;
+  margin-bottom: 0.5em;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.first-section__text {
+  color: #2E323F;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.second-section {
+  padding: 2em 0;
+}
+.second-section__title {
+  color: #A59678;
+  font-size: 2.6rem;
+  margin-bottom: 0.5em;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.second-section__text {
+  color: #2E323F;
+  margin: 1.5em 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.aside {
+  background-color: #3B4050;
+  margin: 2em 0;
+  color: #FFFFFF;
+  padding: 2em;
+}
+.aside__title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+.aside__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+}
+
+.third-section {
+  background-color: #3B4050;
+  padding: 2em 0;
+}
+.third-section__title {
+  color: #FFFFFF;
+  font-size: 2.4rem;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "Oswald";
+  font-weight: bold;
+}
+
+.sub-section__title {
+  font-family: "Oswald";
+  font-weight: bold;
+  color: #A59678;
+  margin-bottom: 0.5em;
+}
+.sub-section__text {
+  color: #cfd0d2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1em;
+  padding: 0 4em;
+}
+
+.sub-section-two {
+  padding: 0 2em;
+}
+.sub-section-two__text {
+  font-family: "Oswald";
+  font-weight: bold;
+  color: #A59678;
+  margin: 1em 0;
+}
+.sub-section-two__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sub-section-two__item {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.sub-section-two__link {
+  text-decoration: none;
+  color: #cfd0d2;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
 }/*# sourceMappingURL=style.css.map */
