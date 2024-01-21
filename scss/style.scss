@@ -4,9 +4,7 @@
 :root {
   font-size: $root-font-size;
 }
-body {
-  font-size: 10px;
-}
+
 img{
   max-width: 100%;
 }
@@ -127,7 +125,7 @@ img{
   }
   }
 }
-
+//modifying classes
 .flex {
   display: flex;
   flex-direction: column;
@@ -136,6 +134,55 @@ img{
   @media (min-width:700px){
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  }
+  &--text-align{
+  @media(min-width: 700px){
+    align-items: flex-start;
+  }   
+  }
+}
+.flex-basis {
+  @media (min-width:700px){
+    flex-basis: 47%;
+    }
+}
+.top{
+  @media(min-width: 1000px){
+    align-items: flex-start;
+  }
+}
+.desktop-flex{
+  @media(min-width:1000px){
+    display: flex;
+    align-items: flex-start; 
+  }
+  &--column{
+    flex-direction: column;
+  }
+}
+.moved-left{
+  @media(min-width:1000px){
+    margin-right: 5em;
+  }
+}
+.paddings{
+  @media(min-width: 700px){
+    margin: 0 2em;
+  }
+  @media(min-width: 1000px){
+    margin: 0 4em;
+  }
+}
+.center-right{
+  @media(min-width: 1000px){
+    margin-right: 0;
+  }
+}
+.center-left{
+  @media(min-width: 1000px){
+    margin-left: 0;
   }
 }
 
@@ -149,6 +196,15 @@ img{
     color:$whiteColor;
     text-align: center;
     @include boldFont;
+    @media(min-width:700px){
+      font-size: 5rem;
+      line-height: 1.2;
+    }
+    @media(min-width:1000px){
+      font-size: 9rem;
+      text-align: start;
+      line-height: 1.1;
+    }
   }
   &__title--gold{
     color: $goldColor;
@@ -158,6 +214,14 @@ img{
     font-size: 2rem;
     font-family: $regularFont;
     margin-bottom: 3em;
+    @media(min-width:700px){
+    margin-bottom: 2em;
+    }
+    @media(min-width:1000px){
+      font-size: 2.4rem;
+      text-align: start;
+      margin-bottom: 0.8em;
+    }
   }
   &--button{
     display: inline-block;
@@ -171,6 +235,11 @@ img{
     @media (min-width:700px){
       transition: 0.3s; 
     }
+    @media(min-width:1000px){
+    margin-bottom: 6em;
+    display: block;
+    width: 9em;  
+    }
     &:hover{
       background-color: #d97e22;
     }
@@ -183,23 +252,33 @@ img{
 .first-section{
   background-color: rgb(242, 240, 240);
   padding: 2em 0;
+  @media(min-width: 1000px){
+    padding:  4em 0;
+  }
   &__title{
     color: $goldColor;
     font-size: 2.4rem;
     margin-bottom: 0.5em;
     @include boldFont;
+    @media(min-width:1000px){
+     font-size: 3rem; 
+    }
   }
   &__text {
     color: $blackColor;
     font-size: 1.6rem;
     margin-bottom: 0.5em;
     font-family: $regularFont;
-    
+    @media(min-width:1000px){
+     font-size: 1.8rem; 
+    }  
   }
 }
 .second-section{
   padding: 2em 0;
-  
+  @media(min-width: 1000px){
+    padding: 4em 0;
+  }
   &__title{
     color: $goldColor;
     font-size: 2.6rem;
@@ -207,6 +286,9 @@ img{
     @include boldFont;
     @media(min-width:700px){
       text-align: start;
+    }
+    @media(min-width:1000px){
+     font-size: 3.6rem; 
     }
   }
   &__text{
@@ -217,6 +299,9 @@ img{
     @media(min-width:700px){
       text-align: start;
     }
+    @media(min-width:1000px){
+      font-size: 2.1rem;
+    }
   }
 }
 
@@ -225,6 +310,9 @@ img{
   margin: 2em 0;
   color: $whiteColor;
   padding: 2em;
+  @media(min-width: 1000px){
+    padding: 4em 0;
+  }
   @media(min-width:700px){
   padding: 2em 0.7em;
   margin: 2em 0.5em;
@@ -234,22 +322,34 @@ img{
     font-size: 2.2rem;
     margin-bottom: 0.5em;
     @include boldFont;
+    @media(min-width:1000px){
+      font-size: 3rem;
+    }
   }
   &__text{
     font-family: $regularFont;
     font-size: 1.6rem ;
+    @media(min-width:1000px){
+      font-size: 1.8rem;
+    }
   }
 }
 
 .third-section{
   background-color: $grayColor;
   padding: 2em 0;
+  @media(min-width: 1000px){
+    padding: 4em 0;
+  }
   &__title {
     color: $whiteColor;
     font-size: 2.4rem;
     margin-bottom: 1em;
     text-align: center;
     @include boldFont; 
+    @media(min-width:1000px){
+     font-size: 3rem; 
+    }
   }
   &__sub-section-container--flex{
     @media(min-width:700px){
@@ -264,6 +364,10 @@ img{
     @include boldFont;
     color:$goldColor;
     margin-bottom: .5em;
+    @media(min-width:1000px){
+      font-size: 2.1rem;
+      text-align: start;
+    }
   }
   &__text{
     color: $veryLightGray;
@@ -271,6 +375,14 @@ img{
     font-size: 1.4rem;
     margin-bottom:1em;
     padding:0 4em;
+    @media(min-width:700px){
+    padding: 0;
+    }
+    @media(min-width:1000px){
+      font-size: 1.6rem;
+      text-align: start;
+      max-width: 430px;
+    }
   }
 }
 .sub-section-two{
@@ -279,6 +391,14 @@ img{
     @include boldFont;
     color: $goldColor;
     margin:1em 0;
+    @media(min-width:700px){
+      margin: 0 0 1em;
+    }
+    @media(min-width:1000px){
+      font-size: 2.1rem;
+      margin: 0 0 1em;
+      text-align: start;
+    }
   }
   &__list{
     list-style: none;
@@ -288,11 +408,17 @@ img{
   &__item{
     text-align: center;
     margin-bottom: 0.5em;
+    @media(min-width: 1000px){
+      text-align: start;
+    }
   }
   &__link{
     text-decoration: none;
     color: $veryLightGray;
     font-family: $regularFont;
     font-size: 1.4rem;
+    @media(min-width:1000px){
+      font-size: 1.6rem;
+    }
   }
 }
