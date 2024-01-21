@@ -20,4 +20,8 @@ BEM Methodology (Block Element Modifier)
 
 Throughout the project, I adhered to the principles of HTML semantics and the BEM methodology to maintain code clarity and ease of maintenance. I hope the website meets expectations and is enjoyable to use!
 
+## Screenshot
+
+![](image/screenshot.png)
+
 # Author: [mslysz]
