@@ -267,11 +267,21 @@ img {
   font-family: "Oswald";
   font-weight: bold;
 }
+@media (min-width: 700px) {
+  .second-section__title {
+    text-align: start;
+  }
+}
 .second-section__text {
   color: #2E323F;
   margin: 1.5em 0;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+}
+@media (min-width: 700px) {
+  .second-section__text {
+    text-align: start;
+  }
 }
 
 .aside {
@@ -279,6 +289,12 @@ img {
   margin: 2em 0;
   color: #FFFFFF;
   padding: 2em;
+}
+@media (min-width: 700px) {
+  .aside {
+    padding: 2em 0.7em;
+    margin: 2em 0.5em;
+  }
 }
 .aside__title {
   font-size: 2.2rem;
@@ -288,7 +304,7 @@ img {
 }
 .aside__text {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .third-section {
@@ -302,6 +318,16 @@ img {
   text-align: center;
   font-family: "Oswald";
   font-weight: bold;
+}
+@media (min-width: 700px) {
+  .third-section__sub-section-container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .sub-section__title {
